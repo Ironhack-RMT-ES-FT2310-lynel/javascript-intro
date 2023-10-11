@@ -270,3 +270,168 @@ console.log(randomNumber)
 // Math.floor()
 let randomNumberFloor = Math.floor(randomNumber)
 console.log(randomNumberFloor)
+
+
+// BOOLEANS
+
+let posBool = true;
+let negBool = false;
+console.log(posBool, negBool)
+
+
+
+// Operador NOT (!) => dar el valor booleano opuesto
+
+
+console.log(!posBool)
+
+
+
+
+// Operadores de comparaciones
+
+let food1 = "hamburguesa";
+let food2 = "pizza";
+let food3 = "hamburguesa";
+
+
+console.log( food1 === food2 ) // comparamos valores
+console.log( food1 === food3 ) // comparamos valores
+
+console.log( food1 !== food3 )
+
+let n1 = 10;
+let n2 = 10;
+
+console.log( n1 >= n2 )
+
+// <
+// >
+// <=
+// >=
+
+
+console.log( "a" > "t" ) // 97 > 116 => false
+// cuando JS analiza operadores de mayor/menor en string, los analiza a traves de tu codigo ASCII
+
+
+// "==" y "==="
+
+// "===" estrictamente igual
+// "==" igual, permite coercion
+
+console.log("5" === "5")
+console.log(5 === "5") // false. Tipo de data diferente.
+console.log(5 == "5") // coercion
+
+
+// operadores logicos
+
+// && and
+// || or
+
+console.log("manzana" === "pera" && "banana" === "banana")
+//                    false      &&         true
+
+// solo es verdadero si todas las condiciones son verdaderas
+// si una es falso, todo es falso
+
+console.log("manzana" === "pera" || "banana" === "banana")
+//                    false      ||         true
+
+// solo es falso, si todos son falsos
+// si al menos uno es verdadero, todo es verdadero
+
+
+
+// Guess the console input for each console.log
+
+// Part 1.
+
+console.log(true && false); 
+console.log(11 % 3 === 2); 
+console.log(false || true); 
+console.log(!true || false); 
+console.log(17 == '17'); 
+console.log(123 === '123'); 
+console.log('Hello' - 'llo');
+
+// Part 2.
+
+let statement = 'i love javaScript!';
+
+console.log(statement.indexOf("I")) 
+
+let subStatement = statement.slice(7, -1);
+console.log(subStatement);
+
+console.log(statement[0].toUpperCase()) 
+
+statement.toUpperCase();
+console.log(statement); 
+
+// "I LOVE JAVASCRIPT!"
+// "i love javascript!"
+// "I love javascript!"
+// error!
+
+// los strings son INMUTABLES. No podemos acceder a partes de él para cambiarlas. Solo podemos reemplazar valores de variables.
+
+
+// CONDICIONALES
+
+// if if else
+
+/* 
+if (condicion) {
+  lo que ocurre si la condicion es verdadero
+}
+*/
+
+
+let naranjas = -10;
+
+// if (naranjas === 0) {
+//   console.log("no tienes naranjas para hacer zumo")
+// }
+
+// if (naranjas > 0 && naranjas <= 10) {
+//   console.log("Podemos hacernos un zumo")
+// }
+
+// if (naranjas > 10) {
+//   console.log("Podemos hacer zumo para todos!!!")
+// }
+
+
+if (naranjas === 0) {
+  console.log("no tienes naranjas para hacer zumo")
+  // termina la ejecución del condicional
+} else if (naranjas > 0 && naranjas <= 10) {
+  console.log("Podemos hacernos un zumo")
+  // termina la ejecución del condicional
+} else if (naranjas > 10) {
+  console.log("Podemos hacer zumo para todos!!!")
+  // termina la ejecución del condicional
+} else {
+  // Lo que ocurre si ninguna de las condiciones fue verdadero
+  console.log("lo sentimos, hubo un error con las naranjas :(")
+}
+
+
+// switch
+
+let color = "magente"
+
+switch(color) {
+
+  case "amarillo":
+    console.log("cosas amarillas: bananas, lapices, el sol")
+    break; // deten la ejecución del switch
+  case "azul":
+    console.log("cosas azules: el cielo, el mar")
+    break; // deten la ejecución del switch
+  default:
+    // Lo que ocurre si ninguna de las condiciones fue verdadero
+    console.log("no tengo registros de este color")
+}
