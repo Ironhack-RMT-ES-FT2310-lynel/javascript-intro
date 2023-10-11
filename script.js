@@ -168,3 +168,105 @@ console.log(capitalized)
 
 
 
+// NUMBERS
+
+
+let posNum = 10;
+let negNum = -20;
+let floatNum = 40.2;
+
+console.log(posNum, negNum, floatNum)
+
+
+
+// Operadores matematicos
+
+
+let num1 = 6;
+let num2 = 2;
+
+console.log( num1 + num2 )
+console.log( num1 - num2 )
+console.log( num1 * num2 )
+console.log( num1 / num2 )
+console.log( num1 ** num2 )
+
+console.log( num1 % num2 ) // no tiene nada que ver con porcentaje
+// 2 + 2 + 2 = 6 => 0
+
+// operador % nos dice si un numero es exactamente divisible entre otro
+
+console.log( 10 % 4 ) // 4 + 4 = 8 => El restante 2
+
+console.log(76428746823743 % 2)
+// 0 es par
+// 1 es impar
+
+
+// Operadores de asignación
+
+
+let myAge = 36;
+console.log(myAge)
+
+
+myAge = myAge + 1; // le suma 1
+console.log(myAge)
+
+
+myAge += 1; // le suma 1
+console.log(myAge)
+
+
+myAge++; // le suma 1
+console.log(myAge)
+
+
+
+// Coercion
+
+console.log(3 + 5)
+
+console.log("3" + "5")
+
+console.log("5" - "3")
+// intenta cambiar el string1 a numero => 5
+// intenta cambiar el string2 a numero => 3
+// hace la resta => 2
+
+console.log("javascript" - "script")
+// intenta cambiar el string1 a numero => Not a Number
+
+let number1 = "20"
+let number2 = "40"
+
+console.log( parseInt(number1) + Number(number2) )
+// para cambiar de string a number:
+// 1. Number
+// 2. parseInt
+// 3. agregar un + al inicio del string
+
+
+
+console.log(3 + "5") // "35"
+console.log("3" + 5) // "35"
+// JS primero ejecuta el operador + como un operador de concatenación.
+
+
+
+// Objeto Global Math
+
+// Math.max y Math.min
+
+let max = Math.max(10, 20, 3)
+console.log(max)
+
+let min = Math.min(10, 20, 3)
+console.log(min)
+
+let randomNumber = Math.random() * 20 // no lleva argumentos. entre 0 y 20
+console.log(randomNumber)
+
+// Math.floor()
+let randomNumberFloor = Math.floor(randomNumber)
+console.log(randomNumberFloor)
