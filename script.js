@@ -435,3 +435,50 @@ switch(color) {
     // Lo que ocurre si ninguna de las condiciones fue verdadero
     console.log("no tengo registros de este color")
 }
+
+
+
+// For LOOP
+
+
+/* 
+
+for ( 
+  variable control;
+  condicional que define cuanto va a deternse el bucle;
+  manipulacion de la variable control;
+) {
+  lo que ocurre en cada iteración del bucle
+}
+
+
+*/
+
+
+// let patata = 0; SE EJECUTA UNA SOLA VEZ, antes de que inicie el bucle
+for (let patata = 0; patata < 10; patata = patata + 2) {
+
+  // if (patata < 10) continua con el bucle
+  // else deten el bucle
+
+  console.log("ejecutando bucle", patata)
+
+
+  // patata = patata + 1; SOLO AL FINAL DE CADA ITERACIÓN
+  // vuelve a empezar
+}
+
+
+// console.log(patata)
+
+for ( let i = 0; i < 20; i++ ) {
+  console.log(i)
+  
+
+
+
+}
+
+
+
+
