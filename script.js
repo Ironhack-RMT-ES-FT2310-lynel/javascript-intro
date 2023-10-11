@@ -473,7 +473,7 @@ for (let patata = 0; patata < 10; patata = patata + 2) {
 
 for ( let i = 0; i < 20; i++ ) {
   console.log(i)
-  
+
 
 
 
@@ -481,4 +481,63 @@ for ( let i = 0; i < 20; i++ ) {
 
 
 
+// Loops y strings
 
+let lyrics = "Around the World, Around the World, Around the World, Around the World, Around the World, Around the World, Around the World, Around the World, Around the World, Around the World, Around the World, Around the World, Around the World, Around the World, Around the World, Around the World, Around the World, Around the World, Around the World, Around the World, Around the World, Around the World, Around the World"
+
+// queremos analizar los characteres del string
+// cuantas veces está repetida la frase.
+let cantidad = 0;
+
+for ( let i = 0; i < lyrics.length; i++ ) {
+
+  // console.log( lyrics[i] )
+
+  if (lyrics[i] === ",") {
+    console.log("encontramos una coma")
+    cantidad = cantidad + 1
+  }
+
+
+}
+
+// hay x cantidad de frases en la cancion
+console.log(cantidad)
+console.log(`hay ${cantidad+1} frases en la liricas!`)
+
+
+
+
+
+// continue & break
+
+
+let string = "B?!*??!n!!*!n?!*?!? !w1!w??!k!o???o!!";
+
+// cambiar todos los "*"" a "a"
+// remover todos los "!" o "?"
+// remover todo lo que esté despues del " "
+
+let codigoSecreto = "";
+
+for ( let i = 0; i < string.length; i++) {
+
+  let character = string[i]
+
+  if (character === "*") {
+    character = "a"
+  } else if (character === "!" || character === "?") {
+    // character = ""
+    continue; // deten la iteración actual del bucle
+  } else if (character === " ") {
+    break; // deten TODO el bucle
+  }
+
+
+
+  codigoSecreto = codigoSecreto + character
+
+}
+
+
+console.log(codigoSecreto)
